@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Dec 21, 2018, 2:01:59 AM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="forms.Product" table="PRODUCT">
+        <id name="id" type="int">
+            <column name="ID" />
+            <generator class="assigned" />
+        </id>
+        <property name="name" type="java.lang.String">
+            <column name="NAME" />
+        </property>
+        <property name="price" type="float">
+            <column name="PRICE" />
+        </property>
+        <property name="category" type="java.lang.String">
+            <column name="CATEGORY" />
+        </property>
+        <property name="discount" type="float">
+            <column name="DISCOUNT" />
+        </property>
+        <property name="mname" type="java.lang.String">
+            <column name="MNAME" />
+        </property>
+    </class>
+</hibernate-mapping>
